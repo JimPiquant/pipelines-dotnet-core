@@ -32,7 +32,3 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- task: ManualIntervention@8
-  inputs:
-    instructions: 'Manual Intervention Now'
-    emailRecipients: 'jimwelch@microsoft.com'

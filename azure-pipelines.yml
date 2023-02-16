@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  1vmImage: ubuntu-latest
+  vmImage: ubuntu-latest
   name: 'Azure Pipelines'
 
 variables:

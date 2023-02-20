@@ -25,6 +25,7 @@ steps:
       echo $(MY-VAR)
 
 - task: Bash@3
+  env: $(my-var-2)
   inputs:
     targetType: 'inline'
     script: echo $(my-secret)

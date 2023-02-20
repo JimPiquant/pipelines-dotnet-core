@@ -27,8 +27,6 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: |
-      # Write your commands here
-      echo $ENV_VARIABLE_NAME
+    script: echo $ENV_VARIABLE_NAME
     env:
-      ENV_VARIABLE_NAME: $(MY-VAR-2)
+      ENV_VARIABLE_NAME: $(my-secret)

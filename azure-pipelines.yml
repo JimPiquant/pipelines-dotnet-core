@@ -31,4 +31,4 @@ steps:
       ENV_VARIABLE_NAME: whale
     script: |
       # Write your commands here
-      echo $(ENV_VARIABLE_NAME)
+      echo $ENV_VARIABLE_NAME

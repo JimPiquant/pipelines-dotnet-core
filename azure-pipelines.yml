@@ -39,3 +39,7 @@ steps:
     echo "Using the mapped env var for this task works and is recommended: $MY_MAPPED_ENV_VAR"
   env:
     MY_MAPPED_ENV_VAR: $(mySecret) # the recommended way to map to an env variable
+
+- script: echo $MYSECRET
+  env:
+    MYSECRET: My secret is $(mySecret)

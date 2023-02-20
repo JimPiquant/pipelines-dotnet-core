@@ -48,3 +48,10 @@ steps:
 - bash: echo $MYSECRET
   env:
     MYSECRET: My other secret is $(my-secret)
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: echo $MYSECRET
+  env:
+    MYSECRET: $(mySecret)

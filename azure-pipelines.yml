@@ -24,7 +24,7 @@ steps:
     targetType: 'inline'
     script: |
       # Write your commands here
-      echo $(MY-VAR)
+      echo $(my-var)
 
 - task: Bash@3
   inputs:

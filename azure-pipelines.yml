@@ -40,6 +40,11 @@ steps:
   env:
     MY_MAPPED_ENV_VAR: $(mySecret) # the recommended way to map to an env variable
 
+# script runs bash on linux/macos and cmd.exe on windows
 - script: echo $MYSECRET
   env:
     MYSECRET: My secret is $(mySecret)
+
+- bash: echo $MYSECRET
+  env:
+    MYSECRET: My other secret is $(my-secret)
